@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comida Nómada | Sabores del mundo</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
     <!-- H E A D E R  -->
@@ -36,9 +37,9 @@
                     <span class="hamburguesa"></span>
                 </button>
                 <ul class="nav-links">
+                    <li><a href="#Productos"><span>Productos</span></a></li>
+                    <li><a href="#Contacto"><span>Contacto</span></a></li>
                     <li><a href="#Clientes"><span>Clientes</span></a></li>
-                    <li><a href="#Usuarios"><span>Usuarios</span></a></li>
-                    <li><a href="#Proveedores"><span>Proveedores</span></a></li>
                 </ul>
             </div>
         </nav>
@@ -46,14 +47,76 @@
 
     <!-- Sección de anuncio -->
     <section class="ad">
-        <div>
-            <a href="#">
+        <div class="ad-box">
+            <h3>ANUNCIO</h3>
+            <a href="https://www.redbull.com/ar-es/energydrink" target="_blank">
                 <video class="ad-content" src="assets/vids/redbull-ad.mp4" autoplay loop muted></video>
             </a>
         </div>
     </section>
 
-    <!-- Script para menú responsive -->
+    <!-- Sección de Productos -->
+    <section class="productos">
+        <h2 id="Productos">PRODUCTOS</h2>
+        <div class="items">
+  
+            <!-- Caja de producto 1 -->
+            <div class="item">
+                <img src="assets/img/platos/plato-1.png" alt="Nombre del plato" class="prod-img">
+                <div class="prod-info">
+                <h3>Salmón Gardenia</h3>
+                <p>Filetes de salmón grillado sobre una cama de mix de hojas verdes, tomates cherry y brotes frescos, con aderezo cítrico de limón y aceite de oliva virgen extra. Una opción ligera, equilibrada y llena de sabor.</p>
+                <span class="precio">$8.000</span>
+                <button class="btn-pedir">Añadir</button>
+                </div>
+            </div>
+
+            <!-- Caja de producto 2 -->
+            <div class="item">
+                <img src="assets/img/platos/plato-1.png" alt="Nombre del plato" class="prod-img">
+                <div class="prod-info">
+                <h3>Salmón Gardenia</h3>
+                <p>Filetes de salmón grillado sobre una cama de mix de hojas verdes, tomates cherry y brotes frescos, con aderezo cítrico de limón y aceite de oliva virgen extra. Una opción ligera, equilibrada y llena de sabor.</p>
+                <span class="precio">$8.000</span>
+                <button class="btn-pedir">Añadir</button>
+                </div>
+            </div>
+
+            <!-- Caja de producto 3 -->
+            <div class="item">
+                <img src="assets/img/platos/plato-1.png" alt="Nombre del plato" class="prod-img">
+                <div class="prod-info">
+                <h3>Salmón Gardenia</h3>
+                <p>Filetes de salmón grillado sobre una cama de mix de hojas verdes, tomates cherry y brotes frescos, con aderezo cítrico de limón y aceite de oliva virgen extra. Una opción ligera, equilibrada y llena de sabor.</p>
+                <span class="precio">$8.000</span>
+                <button class="btn-pedir">Añadir</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-info">
+            <h3>Comida Nómada</h3>
+            <p>Sabores del mundo, directo a tu mesa.</p>
+            <p><strong>Tel:</strong> +54 3496 123-456</p>
+            <p><strong>Email:</strong> comida.nomada@gmail.com</p>
+          </div>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Comida Nómada. Todos los derechos reservados.</p>
+        </div>
+      </footer>
+      
+
+    <!-- Scripts -->
     <script src="script.js"></script>
 </body>
 </html>
