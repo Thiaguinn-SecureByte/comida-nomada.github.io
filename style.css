@@ -39,6 +39,9 @@ body {
     align-items: center;
     padding: 20px 40px;
     flex-wrap: wrap;
+    
+    justify-content: center;
+    gap: 15px;
 }
 
 .logo-completo {
@@ -69,6 +72,8 @@ body {
     font-size: 14px;
     max-width: 260px;
     line-height: 1.5;
+    
+    margin-top: 15px;
 }
 
 /* MENÚ PRINCIPAL */
@@ -94,6 +99,8 @@ body {
     border: none;
     cursor: pointer;
     display: none;
+    
+    display: block;
 }
 
 .hamburguesa {
@@ -127,6 +134,16 @@ body {
     display: flex;
     gap: 40px;
     list-style: none;
+    
+    display: none;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.95);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
 }
 
 .nav-links li a {
@@ -156,6 +173,10 @@ body {
     color: #FFD700;
 }
 
+.nav-links.active {
+    display: flex;
+}
+
 /* Sección anuncio */
 .ad-content {
     width: 300px;
@@ -163,33 +184,3 @@ body {
 }
 
 /* RESPONSIVE */
-@media (max-width: 768px) {
-    .header-container {
-        justify-content: center;
-        gap: 15px;
-    }
-
-    .contacto-header {
-        margin-top: 15px;
-    }
-
-    .nav-toggle {
-        display: block;
-    }
-
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        background: rgba(0, 0, 0, 0.95);
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        text-align: center;
-        padding: 20px 0;
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
-}
