@@ -38,7 +38,7 @@ body {
     align-items: center;
     padding: 20px 40px;
     flex-wrap: wrap;
-    
+
     justify-content: center;
     gap: 15px;
 }
@@ -93,12 +93,20 @@ body {
 }
 
 .nav-toggle {
-    background: none;
+    background: transparent;
     border: none;
     cursor: pointer;
-    display: none;
-    
     display: block;
+    padding: 10px;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+}
+
+.nav-toggle:focus,
+.nav-toggle:active {
+    outline: none;
+    background-color: transparent;
+    box-shadow: none;
 }
 
 .hamburguesa {
@@ -132,7 +140,7 @@ body {
     display: flex;
     gap: 40px;
     list-style: none;
-    
+
     display: none;
     flex-direction: column;
     background: rgba(0, 0, 0, 0.95);
@@ -142,8 +150,6 @@ body {
     width: 100%;
     text-align: center;
     padding: 20px 0;
-
-    
     z-index: 1;
 }
 
@@ -180,9 +186,9 @@ body {
 
 /* Sección anuncio */
 .ad {
-    margin-top: 40px;
     background-color: rgb(244, 244, 244);
     padding: 25px;
+    padding-top: 65px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -364,6 +370,7 @@ button:hover {
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     display: none;
     transition: opacity 0.3s ease, transform 0.3s ease;
+    transition: right 0.3s ease;
 }
 
 #btn-volver-arriba:hover {
@@ -513,8 +520,16 @@ button:hover {
     font-size: 22px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.3);
     cursor: pointer;
+    transition: right 0.3s ease;
 }
 
+/* Cuando el carrito está abierto, movemos los botones a la izquierda del sidebar */
+.carrito.activo ~ .carrito-flotante {
+    right: 368px; /* 360px del carrito + 35px de separación */
+}
+.carrito.activo ~ #btn-volver-arriba {
+    right: 373px; /* 360px del carrito + 40px de separación */
+}
 
 /* FOOTER */
 .footer {
@@ -524,7 +539,7 @@ button:hover {
     padding: 30px 20px 20px;
     text-align: center;
 }
-  
+
 .footer-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -565,7 +580,7 @@ button:hover {
     .contacto-header {
         margin-top: 0;
     }
-    
+
     .nav-toggle {
         display: none;
     }
